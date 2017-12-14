@@ -39,5 +39,5 @@ const styles = {
   }
 };
 
-export default Button;
-//export { Button };  // removed default since using index.js
+//export default Button;
+export { Button };  // removed default since using index.js
