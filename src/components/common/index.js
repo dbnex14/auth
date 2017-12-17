@@ -9,6 +9,7 @@ export * from './Button';
 export * from './Card';
 export * from './CardSection';
 export * from './Header';
+export * from './Input';
 
 // One side thing, I did not have it but instructor had lint error
 // "No named exports found in module './Button'".  The downside of
@@ -23,7 +24,7 @@ export * from './Header';
 // Once you save file after this change, lint error should be gone for
 // that file.  Again, I did not have these errors but instructor did, but
 // if I tried running the app, it would error:
-// “Invariant Violation: Element type is invalie: expected a string 
-// (four built-in components) or a class/function (for composite components) 
-// but got: undefined.  You likely forgot to export your component from the 
+// “Invariant Violation: Element type is invalie: expected a string
+// (four built-in components) or a class/function (for composite components)
+// but got: undefined.  You likely forgot to export your component from the
 // file it’s defined in.” like I documented in the lecture notes.
