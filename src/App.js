@@ -5,7 +5,7 @@ import { Header } from './components/common'; // this will return index.js in co
 import LoginForm from './components/LoginForm';
 
 class App extends Component {
-  componentWillMount(){
+  componentWillMount() {
     // firebase initialization
     firebase.initializeApp(
       {
@@ -19,7 +19,7 @@ class App extends Component {
     );
   }
 
-  render () {
+  render() {
     return (
       <View>
         <Header headerText="Authentication" />
