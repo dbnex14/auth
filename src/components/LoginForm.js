@@ -4,11 +4,6 @@ import firebase from 'firebase';
 import { Button, Card, CardSection, Input, Spinner } from './common';
 
 class LoginForm extends Component {
-  constructor(props) {
-      super(props);
-      this.onLoginSuccess = this.onLoginSuccess.bind(this);
-      this.onLoginFail = this.onLoginFail.bind(this);
-  }
 
   state = { email: '', password: '', error: '', loading: false };
 
@@ -17,11 +12,11 @@ class LoginForm extends Component {
     this.setState({ error: '', loading: true });
 
     firebase.auth().signInWithEmailAndPassword(email, password)
-    .then(this.onLoginSuccess)
+    .then(this.onLoginSuccess.bind(this))
     .catch(() => {
       firebase.auth().createUserWithEmailAndPassword(email, password)
-      .then(this.onLoginSuccess)
-      .catch(this.onLoginFail);
+      .then(this.onLoginSuccess.bind(this))
+      .catch(this.onLoginFail.bind(this));
     });
   }
 
