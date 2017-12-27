@@ -26,5 +26,5 @@ const styles = {
   }
 };
 
-export default Card;
-//export { Card }; // removed default since using index.js
+//export default Card;
+export { Card }; // removed default since using index.js

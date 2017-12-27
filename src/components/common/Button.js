@@ -9,7 +9,8 @@ const Button = ({ onPress, children }) => {
       //this onPress is same as the fat arrow function
       //we defined in AlbumDetail Button tag.
       onPress={onPress}
-      style={buttonStyle}>
+      style={buttonStyle}
+    >
       <Text style={textStyle}>
         {children}
       </Text>
@@ -39,5 +40,5 @@ const styles = {
   }
 };
 
-export default Button;
-//export { Button };  // removed default since using index.js
+//export default Button;
+export { Button };  // removed default since using index.js

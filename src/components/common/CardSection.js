@@ -21,5 +21,5 @@ const styles = {
     }
 };
 
-export default CardSection;
-//export { CardSection }; // removed default since using index.js
+//export default CardSection;
+export { CardSection }; // removed default since using index.js
